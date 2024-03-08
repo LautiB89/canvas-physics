@@ -1,0 +1,24 @@
+- General
+[x] Organizar codigo
+[ ] Mejorar tema imports, setup, etc
+
+- Vectores
+[x] Implementar operaciones de Vectores
+
+- Simulacion bolas
+[x] Agregar multiples bolas
+[x] Detectar colisión correctamente
+[x] Mejorar respuesta a colisión
+[ ] Mejorar movimiento con mouse
+[ ] Optimizar detección para muchas (muchisimas) bolas
+
+- Conceptos
+[ ] Entender velocidad relativa y de separación
+[ ] entender elasticidad y momento (idem masa)
+
+- Simulación Navbar
+[ ] Quizás necesito crear rectangulos
+[ ] Asignar velocidad y aceleración para interactuar correctamente con 
+
+- Bugs
+[ ] Colision BB ambas con masa 0
