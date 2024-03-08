@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <script type="module" src="main.js"></script>
+    <canvas></canvas>
+    <div class="controls">
+      <button id="ballGenerator">Generar bolita</button>
+      <button id="crazy">Go crazy</button>
+      <div class="labeledInput">
+        <label>Elasticidad</label>
+        <input type="range" class="slider" id="elasticitySlider" />
+      </div>
+      <div class="labeledInput">
+        <label style="flex-grow: 1">Fricción</label>
+        <input type="range" class="slider" id="frictionSlider" />
+      </div>
+      <div class="labeledInput">
+        <label>Mostrar vectores</label>
+        <input type="checkbox" checked id="showVectors" />
+      </div>
+      <div class="labeledInput">
+        <label>Mostrar masas</label>
+        <input type="checkbox" checked id="showMasses" />
+      </div>
+    </div>
+  </body>
+</html>

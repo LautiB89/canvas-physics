@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(13, 17, 23);
+}
+
+canvas {
+  background: rgb(13, 17, 23);
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+}
+
+.controls {
+  background-color: rgba(54, 65, 80, 0.5);
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-left: 16px;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  padding-right: 6px;
+  color: white;
+}
+
+.labeledInput {
+  display: flex;
+  align-items: center;
+}
