@@ -1,5 +1,7 @@
 # Ball Physics implemented in HTML5 Canvas
 
+![Example](example.png)
+
 Simple vanilla implementation of some basic physics for ball collisions:
 
 - Ball to ball collision
