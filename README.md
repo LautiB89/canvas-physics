@@ -7,6 +7,8 @@ Simple vanilla implementation of some basic physics for ball collisions:
 - Ball to ball collision
 - Ball to wall collision
 
+Live demo here: <https://lautib89.github.io/canvas-physics/>
+
 Heavily inspired by:
 
 - [this](https://www.youtube.com/playlist?list=PLo6lBZn6hgca1T7cNZXpiq4q395ljbEI_) youtube playlist made by [danielstuts](https://www.youtube.com/@danielstuts3129), implementing what i did and much more.
