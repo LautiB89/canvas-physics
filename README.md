@@ -1,6 +1,6 @@
 # Ball Physics implemented in HTML5 Canvas
 
-![Example](example.png)
+![Showcase](example.png)
 
 Simple vanilla implementation of some basic physics for ball collisions:
 
