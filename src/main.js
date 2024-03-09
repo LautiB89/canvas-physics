@@ -9,8 +9,8 @@ import { setupControls } from "./setup";
 import { balls, variables } from "./variables";
 
 const canvas = document.querySelector("canvas");
-canvas.width = window.innerWidth - 5;
-canvas.height = window.innerHeight - 5;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d");
 
