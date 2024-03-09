@@ -14,25 +14,22 @@ export class Ball {
     this.acc = getNullVector();
     this.color = getMassColor(this.m);
     this.mouseAttached = false;
-    this.mousePos = getNullVector();
 
-    canvas.addEventListener("mousedown", (event) => {
-      this.mousePos = new Vector(event.pageX, event.pageY);
-      if (dist(this.pos, this.mousePos) <= this.r) {
+    canvas.addEventListener("mousedown", () => {
+      if (dist(this.pos, variables.mousePos) <= this.r) {
         this.mouseAttached = true;
       }
     });
-    canvas.addEventListener("mousemove", (event) => {
-      this.mousePos = new Vector(event.pageX, event.pageY);
-    });
-    canvas.addEventListener("mouseleave", () => {
-      this.mouseAttached = false;
-      this.acc = getNullVector();
-    });
-    canvas.addEventListener("mouseup", () => {
-      this.mouseAttached = false;
-      this.acc = getNullVector();
-    });
+
+    const dropBall = () => {
+      if (this.mouseAttached) {
+        this.mouseAttached = false;
+        this.acc = getNullVector();
+      }
+    };
+    canvas.addEventListener("mouseleave", dropBall);
+    canvas.addEventListener("mouseup", dropBall);
+
     balls.push(this);
   }
 
@@ -58,8 +55,8 @@ export class Ball {
   updatePosition(canvas) {
     this.handleWallsColision(canvas);
     if (this.mouseAttached) {
-      const dir = substr(this.mousePos, this.pos);
-      this.acc = dir.unit().mult(dir.mag() / 10);
+      const dir = substr(variables.mousePos, this.pos);
+      this.acc = dir.unit().mult(dir.mag() / 100);
     }
     this.vel = sum(this.vel, this.acc).mult(1 - variables.friction);
     this.pos = sum(this.pos, this.vel);
