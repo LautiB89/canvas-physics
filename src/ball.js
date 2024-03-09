@@ -1,5 +1,8 @@
+import { scaleLinear } from "d3-scale";
 import { Vector, substr, dist, getNullVector, sum, dot } from "./math";
 import { balls, variables } from "./variables";
+
+const getMassColor = scaleLinear().domain([0, 10]).range(["#00c6f7", "purple"]);
 
 export class Ball {
   constructor(x, y, r, m, canvas) {
@@ -9,7 +12,7 @@ export class Ball {
     this.invM = 1 / m;
     this.vel = getNullVector();
     this.acc = getNullVector();
-    this.color = "rgb(169,53,53)";
+    this.color = getMassColor(this.m);
     this.mouseAttached = false;
     this.mousePos = getNullVector();
 

@@ -13,13 +13,14 @@
 [ ] Mejorar movimiento con mouse (está muy acelerado)
 [ ] Optimizar detección para muchas (muchisimas) bolas
 [ ] Agregar color en función de la masa
+[ ] Mejorar response con touch
 
 - Conceptos
 [ ] Entender velocidad relativa y de separación
 [ ] entender elasticidad y momento (idem masa)
 
 - Panel de control
-[ ] Colapsable
+[x] Colapsable
 [ ] Responsive
 
 - Simulación Navbar
