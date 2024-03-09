@@ -1,6 +1,7 @@
 - General
 [x] Organizar codigo
 [ ] Mejorar tema imports, setup, etc
+[ ] Agregar introducción. Explicar los controles y el codigo de colores (balls y vectors)
 
 - Vectores
 [x] Implementar operaciones de Vectores
@@ -9,12 +10,17 @@
 [x] Agregar multiples bolas
 [x] Detectar colisión correctamente
 [x] Mejorar respuesta a colisión
-[ ] Mejorar movimiento con mouse
+[ ] Mejorar movimiento con mouse (está muy acelerado)
 [ ] Optimizar detección para muchas (muchisimas) bolas
+[ ] Agregar color en función de la masa
 
 - Conceptos
 [ ] Entender velocidad relativa y de separación
 [ ] entender elasticidad y momento (idem masa)
+
+- Panel de control
+[ ] Colapsable
+[ ] Responsive
 
 - Simulación Navbar
 [ ] Quizás necesito crear rectangulos
