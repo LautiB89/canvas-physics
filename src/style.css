@@ -12,15 +12,32 @@ canvas {
   position: absolute;
 }
 
-.controls {
+#controlPanel {
+  top: -269px;
+  left: 16px;
+  position: absolute;
+  transition: top 0.5s;
+  background-color: rgba(54, 65, 80, 0.5);
+  border-radius: 12px;
+}
+
+#controlPanel:hover {
+  top: 16px;
+}
+
+#triggerControls {
+  padding: 6px;
+  color: white;
+  text-align: center;
+}
+
+#controls {
   background-color: rgba(54, 65, 80, 0.5);
   padding: 16px;
-  border-radius: 6px;
-  margin-top: 16px;
-  margin-left: 16px;
-  position: absolute;
-  z-index: 100;
   display: flex;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   flex-direction: column;
   gap: 16px;
 }
@@ -30,7 +47,11 @@ label {
   color: white;
 }
 
-.labeledInput {
+.labeledRange {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.labeledCheckbox {
+  display: flex;
 }

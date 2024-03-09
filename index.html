@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Navbar</title>
+    <title>Canvas physics</title>
   </head>
   <body>
     <script type="module" src="src/main.js"></script>
     <canvas></canvas>
-    <div class="controls">
-      <button id="ballGenerator">Generar bolita</button>
-      <button id="crazy">Go crazy</button>
-      <div class="labeledInput">
-        <label>Elasticidad</label>
-        <input type="range" class="slider" id="elasticitySlider" />
+    <div id="controlPanel">
+      <div id="controls">
+        <button id="ballGenerator">Generate ball</button>
+        <button id="crazy">Go crazy</button>
+        <div class="labeledRange">
+          <label>Elasticity</label>
+          <input type="range" class="slider" id="elasticitySlider" />
+        </div>
+        <div class="labeledRange">
+          <label>Friction</label>
+          <input type="range" class="slider" id="frictionSlider" />
+        </div>
+        <div class="labeledCheckbox">
+          <label>Show vectors</label>
+          <input type="checkbox" checked id="showVectors" />
+        </div>
+        <div class="labeledCheckbox">
+          <label>Show masses</label>
+          <input type="checkbox" checked id="showMasses" />
+        </div>
       </div>
-      <div class="labeledInput">
-        <label style="flex-grow: 1">Fricción</label>
-        <input type="range" class="slider" id="frictionSlider" />
-      </div>
-      <div class="labeledInput">
-        <label>Mostrar vectores</label>
-        <input type="checkbox" checked id="showVectors" />
-      </div>
-      <div class="labeledInput">
-        <label>Mostrar masas</label>
-        <input type="checkbox" checked id="showMasses" />
-      </div>
+      <div id="triggerControls">Controls</div>
     </div>
   </body>
 </html>
