@@ -14,7 +14,7 @@ canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d");
 
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 15; i++) {
   new Ball(
     randInt(100, canvas.width - 100),
     randInt(100, canvas.height - 100),
