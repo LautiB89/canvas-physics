@@ -13,31 +13,32 @@ canvas {
 }
 
 #controlPanel {
-  top: -269px;
+  top: -284px;
   left: 16px;
   position: absolute;
   transition: top 0.5s;
-  background-color: rgba(54, 65, 80, 0.5);
-  border-radius: 12px;
 }
 
 #controlPanel:hover {
-  top: 16px;
+  top: 0px;
 }
 
 #triggerControls {
-  padding: 6px;
+  padding: 8px;
   color: white;
   text-align: center;
+  background-color: rgba(54, 65, 80, 0.75);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 #controls {
   background-color: rgba(54, 65, 80, 0.5);
+  margin-top: 16px;
   padding: 16px;
   display: flex;
-  border-radius: 6px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   flex-direction: column;
   gap: 16px;
 }
@@ -54,4 +55,46 @@ label {
 
 .labeledCheckbox {
   display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  #controlPanel {
+    top: -338px;
+    left: 0;
+    width: 100%;
+    font-size: 26px;
+  }
+
+  #triggerControls {
+    border-radius: 0;
+  }
+
+  #controls {
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  button {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  #controlPanel {
+    top: -378px;
+    min-width: 40%;
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .labeledCheckbox input {
+    align-self: center;
+    width: 25px;
+    height: 25px;
+  }
 }
